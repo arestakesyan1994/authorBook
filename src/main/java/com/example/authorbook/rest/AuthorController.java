@@ -40,7 +40,7 @@ public class AuthorController {
             authorRepository.delete(id);
             return ResponseEntity.ok("Delete");
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body("user with" + id + "does not exist");
+            return ResponseEntity.badRequest().body("user with " + id + " does not exist");
         }
     }
 
